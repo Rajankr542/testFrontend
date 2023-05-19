@@ -1,24 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import CustomDataTable from './components/customDataTable';
+import data from './Data/data.json';
+import { GeneralColumn } from './Data/tableConfig';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>MIS Reports</h1>
+      <CustomDataTable data={data} columns={GeneralColumn} />
     </div>
   );
 }
