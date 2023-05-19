@@ -1,7 +1,7 @@
 import React from 'react';
 import CustomDataTable from './components/customDataTable';
-import data from './Data/data.json';
-import { GeneralColumn } from './Data/tableConfig';
+import data from './TableAssests/data.json';
+import { GeneralColumn } from './TableAssests/tableConfig';
 function App() {
   return (
     <div>
